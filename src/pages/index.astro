@@ -1,4 +1,9 @@
 ---
+import "../styles/global.css";
+// Name and where the components from
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 const pageTitle = "Home Page";
 ---
 
@@ -11,10 +16,11 @@ const pageTitle = "Home Page";
     <title>Astro</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Header />
     <h1>Astro! {pageTitle}</h1>
-    <p>Now test if this work</p>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
